@@ -4,7 +4,7 @@ public class AiClassGame{
     Scanner s = new Scanner(System.in);
     int difficulty = 0;
     try{
-      System.out.println("Please choose\n1.Easy\n2.Normal\n3.Hard\n4.Impossibile");
+      System.out.println("Please choose\n1.Easy\n2.Normal\n3.Hard\n4.Impossible");
       difficulty  = s.nextInt();
       if(difficulty < 1 || difficulty > 4){
         System.err.println("You have entered a wrong value\nProgram will terminate");
@@ -54,7 +54,7 @@ public class AiClassGame{
 
       sum += cpuNumber;
       checkPlayer = false;
-      System.out.println("Computer has choosen : "+ cpuNumber);
+      System.out.println("Computer has chosen : "+ cpuNumber);
       printSum(sum);
       if(sum >= 100)
         break;

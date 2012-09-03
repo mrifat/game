@@ -1,4 +1,4 @@
-#This is a 2 players game  our AI instructor interduced to us during AI class
+#This is a 2 players game  our AI instructor intorduced to us during AI class
 #The point of the game is to choose a number between 1 and 10 in  each turn
 #The player that reach's 100 wins
 #The Perfect number to trap the other player at is 89,
@@ -9,7 +9,7 @@ while true
   puts 'Please choose a difficulty', '1. for easy', '2. for normal',  '3.for hard', '4.for impossibile'
   diff = gets.to_i
   if diff < 1 || diff > 4
-    puts 'You have entered a wrong value please make sure to choose correctly'
+    puts 'You have entered a wrong number'
     next
   else
     break
@@ -32,7 +32,7 @@ while true
     cpuNumber = g.calculateCpuNumber(sum,diff)
     sum += cpuNumber
     checkPlayer = false
-    puts 'Computer choose : ' + cpuNumber.to_s
+    puts 'Computer has chosen : ' + cpuNumber.to_s
     puts 'sum is : ' + sum.to_s
     break if sum >= 100
   end
