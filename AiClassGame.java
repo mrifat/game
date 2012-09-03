@@ -1,6 +1,11 @@
+//This is a 2 players game  our AI instructor introduced to us during AI class
+//The point of the game is to choose a number between 1 and 10 in  each turn
+//The player that reach's 100 wins
+//The Perfect number to trap the other player at is 89,
+//so whatever number (s)he enter's will be less than 100
 import java.util.Scanner;
 public class AiClassGame{
-  public static void main(String args[]) throws java.util.InputMismatchException{
+  public static void main(String args[]){
     Scanner s = new Scanner(System.in);
     int difficulty = 0;
     try{
