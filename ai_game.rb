@@ -1,10 +1,15 @@
-#This is a 2 players game  our AI instructor introduced to us during AI class
-#The point of the game is to choose a number between 1 and 10 in  each turn
-#The player that reach's 100 wins
-#The Perfect number to trap the other player at is 89,
-#so whatever number (s)he enter's will be less than 100
-require 'game.rb'
+=begin
+  This is a 2 players game  our AI instructor introduced to us during AI class
+  The point of the game is to choose a number between 1 and 10 in  each turn
+  The player that reaches 100 wins
+  The Perfect number to trap the other player at is 89,
+  so whatever number (s)he enteres will be less than 100
+=end
+
+require './game.rb'
+
 sum = 0
+
 while true
   puts 'Please choose a difficulty', '1. for easy', '2. for normal',  '3.for hard', '4.for impossible'
   diff = gets.to_i
@@ -18,6 +23,7 @@ while true
 end
 
 g = Game.new(diff)
+
 while true
   puts 'Please enter a number between 1 and 10'
   playerNumber = gets.to_i
